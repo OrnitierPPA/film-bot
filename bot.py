@@ -16,7 +16,7 @@ async def send_welcome(message: types.Message):
     await message.reply('Привет!\nВыберите жанр кино, который Вам нравится.', reply_markup = keyboards.kd)
 
 # Череда команд для показа списков фильмов. Можно заменить число выводимых фильмов
-@dp.message_handler(Text("Драма"))
+@dp.message_handler(Text("Драма 😧"))
 async def drama(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -52,7 +52,7 @@ async def drama(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
         
-@dp.message_handler(Text("Комедии"))
+@dp.message_handler(Text("Комедии 😁"))
 async def comedy(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -88,7 +88,7 @@ async def comedy(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
 
-@dp.message_handler(Text("Мюзикл"))
+@dp.message_handler(Text("Мюзикл 🎵"))
 async def musical(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -124,7 +124,7 @@ async def musical(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
 
-@dp.message_handler(Text("Романтика"))
+@dp.message_handler(Text("Романтика 🥰"))
 async def romance(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -160,7 +160,7 @@ async def romance(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
         
-@dp.message_handler(Text("Ужасы"))
+@dp.message_handler(Text("Ужасы 🔪"))
 async def horror(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -196,7 +196,7 @@ async def horror(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
 
-@dp.message_handler(Text("Фэнтези"))
+@dp.message_handler(Text("Фэнтази 🧝🧙"))
 async def fantsy(message: types.Message):
     await message.reply('Ожидайте..')
 
@@ -232,7 +232,7 @@ async def fantsy(message: types.Message):
             con.close()
             print('[INFO] PostgreSQL connection closed')
 
-@dp.message_handler(Text("Экшен"))
+@dp.message_handler(Text("Экшен 🥷"))
 async def action(message: types.Message):
     await message.reply('Ожидайте..')
 
