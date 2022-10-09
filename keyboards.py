@@ -9,4 +9,4 @@ fantasy = KeyboardButton(text = 'Фэнтази 🧝🧙')
 action = KeyboardButton(text = 'Экшен 🥷')
 refresh = KeyboardButton(text = 'Обновить список(только для владельца)')
 
-kd = ReplyKeyboardMarkup().add(drama).add(comedy).add(musical).add(romance).add(horror).add(fantasy).add(action)add(refresh)
+kd = ReplyKeyboardMarkup().add(drama).add(comedy).add(musical).add(romance).add(horror).add(fantasy).add(action).add(refresh)
